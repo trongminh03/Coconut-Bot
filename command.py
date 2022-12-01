@@ -1,10 +1,13 @@
 import discord
 from discord.ext import commands
 import imagegetter
+import os
+from dotenv import load_dotenv
+
 
 client = commands.Bot(command_prefix = 'ska ', intents=discord.Intents.all())
 
-
+load_dotenv()
 
 
 @client.event
@@ -60,7 +63,6 @@ async def on_message(mes):
         file = discord.File('download/' + str(0)     + 'image.jpg')
         msg = await channel.send(file = file)
         
-with open('token.txt', 'r') as file:
-    token = file.readlines()[0]
+
        
-client.run(token)
+client.run(os.getenv('TOKEN'))
