@@ -9,7 +9,7 @@ client = commands.Bot(command_prefix = 'ska ', intents=discord.Intents.all())
 
 load_dotenv()
 
-# on ready function
+# ready event
 @client.event
 async def on_ready():
     print('Im ready now')
