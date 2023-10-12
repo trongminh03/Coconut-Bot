@@ -12,7 +12,7 @@ load_dotenv()
 
 @client.event
 async def on_ready():
-    print('Ready now')
+    print('Im ready now')
     
     
 @client.event
