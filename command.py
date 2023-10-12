@@ -14,7 +14,7 @@ load_dotenv()
 async def on_ready():
     print('Ready now!')
     
-
+# on_message event
 @client.event
 async def on_message(mes): 
     channel = mes.channel
