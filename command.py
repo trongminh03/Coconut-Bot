@@ -4,7 +4,7 @@ import imagegetter
 import os
 from dotenv import load_dotenv
 
-# prefix: ska
+# bot_prefix: ska
 client = commands.Bot(command_prefix = 'ska ', intents=discord.Intents.all())
 
 load_dotenv()
@@ -12,9 +12,9 @@ load_dotenv()
 # ready event
 @client.event
 async def on_ready():
-    print('Im ready now')
+    print('Ready now!')
     
-    
+
 @client.event
 async def on_message(mes): 
     channel = mes.channel
